@@ -1,16 +1,274 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>itsmaryjm</title>
 
-    <link rel="icon" type="image/png" href="assets/images/logo_d.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Personal portfolio of Mary Josephine, a BS Information Technology student from the Philippines.">
+  <title>ITSMARYJM | Portfolio</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <link rel="icon" type="image/png" href="assets/images/logo_d.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="ITSMARYJM home">
+        <img src="assets/images/itsmaryjm_logo.png" alt="ITSMARYJM logo" class="brand-logo">
+        <span class="brand-name">ITSMARYJM</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section section-space" id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="hero-copy reveal">
+              <p class="eyebrow"><span></span>HELLO THERE!</p>
+              <h1>Hi, I'm<br><strong>Mary Josephine</strong></h1>
+              <h2>BS Information Technology Student</h2>
+              <p class="hero-description">
+                I enjoy turning ideas into thoughtful digital experiences while learning how good design and dependable
+                systems work together.
+              </p>
+              <div class="hero-actions d-flex flex-wrap gap-3">
+                <a class="btn btn-gold" href="#projects"><i class="bi bi-arrow-right-circle"></i> View Projects</a>
+                <a class="btn btn-outline-brown" href="#skills"><i class="bi bi-grid"></i> Explore Skills</a>
+              </div>
+              <div class="hero-meta">
+                <span><i class="bi bi-geo-alt"></i> Based in Laguna, Philippines</span>
+                <span>Exploring design, development, and everything in between.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="portrait-wrap reveal reveal-delay">
+              <div class="shape shape-square"></div>
+              <div class="shape shape-circle"></div>
+              <div class="portrait-card">
+                <img src="assets/images/MAGBOO_PIC 2.png" alt="Mary Josephine Magboo" class="hero-portrait">
+              </div>
+              <span class="portrait-daisy" aria-hidden="true"><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-strip" aria-label="Skills">
+      <div class="strip-content">
+        <div class="ticker-group">
+          <span><i class="bi bi-code-slash"></i> HTML / CSS</span>
+          <span><i class="bi bi-bootstrap"></i> Bootstrap</span>
+          <span><i class="bi bi-filetype-php"></i> PHP / MySQL</span>
+          <span><i class="bi bi-vector-pen"></i> Figma</span>
+          <span><i class="bi bi-github"></i> GitHub</span>
+          <span><i class="bi bi-bezier2"></i> UI / UX</span>
+          <span><i class="bi bi-clipboard-check"></i> QA Testing</span>
+          <span><i class="bi bi-database"></i> Database Design</span>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span><i class="bi bi-code-slash"></i> HTML / CSS</span>
+          <span><i class="bi bi-bootstrap"></i> Bootstrap</span>
+          <span><i class="bi bi-filetype-php"></i> PHP / MySQL</span>
+          <span><i class="bi bi-vector-pen"></i> Figma</span>
+          <span><i class="bi bi-github"></i> GitHub</span>
+          <span><i class="bi bi-bezier2"></i> UI / UX</span>
+          <span><i class="bi bi-clipboard-check"></i> QA Testing</span>
+          <span><i class="bi bi-database"></i> Database Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-space" id="about">
+      <div class="container">
+        <div class="about-editorial">
+          <div class="about-story reveal">
+            <p class="eyebrow"><span></span>ABOUT <i class="bi bi-flower1" aria-hidden="true"></i></p>
+            <h2>More than just coding.</h2>
+            <div class="journey-copy">
+              <p>I didn&rsquo;t choose Information Technology because I already knew everything.</p>
+              <p>I chose it because I was curious.</p>
+              <p>Curious about how websites work, why some interfaces feel effortless, and how technology can turn simple ideas into experiences people actually use.</p>
+              <p>Over time, that curiosity grew into something I genuinely enjoy&mdash;designing interfaces, building systems, working with databases, and testing ideas until they become better.</p>
+              <p>I&rsquo;m still learning, still exploring, and still figuring things out. And honestly, that&rsquo;s the part I love the most.</p>
+            </div>
+          </div>
+          <aside class="about-quote-note reveal reveal-delay"><span aria-hidden="true">✦</span><blockquote>&ldquo;Still learning,<br>still building,<br>and improving one project at a time.&rdquo;</blockquote></aside>
+        </div>
+
+        <div class="education-line reveal">
+          <p class="mini-label">Education</p>
+          <div class="timeline-row">
+            <span class="timeline-year">2024 &mdash; Present</span>
+            <div><h3>Bachelor of Science in Information Technology</h3><p>2nd Year Student</p><p>Academic Year 2025&ndash;2026</p></div>
+          </div>
+        </div>
+
+        <div class="interests-section reveal">
+          <p class="mini-label">My Interests</p>
+          <div class="interest-grid">
+            <article class="interest-card"><span>01</span><h3>Design</h3><p>I enjoy creating clean and thoughtful interfaces that are both functional and visually pleasing.</p></article>
+            <article class="interest-card"><span>02</span><h3>Development</h3><p>I like turning ideas into real projects through frontend and backend development.</p></article>
+            <article class="interest-card"><span>03</span><h3>Growth</h3><p>I believe learning is a continuous process, and every project is an opportunity to improve.</p></article>
+          </div>
+        </div>
+
+        <div class="small-details reveal">
+          <p class="mini-label">Small Details</p>
+          <dl>
+            <div><dt>Location</dt><dd>Laguna, Philippines</dd></div>
+            <div><dt>Current Focus</dt><dd>Web Development &amp; QA Testing</dd></div>
+            <div><dt>Favorite Tool</dt><dd>Figma</dd></div>
+            <div><dt>Strength</dt><dd>Attention to Detail</dd></div>
+            <div><dt>Philosophy</dt><dd>Learn first. Improve always.</dd></div>
+          </dl>
+        </div>
+        <div class="section-transition reveal"><span aria-hidden="true"></span><p>Here’s what I’ve been practicing so far.</p><span aria-hidden="true"></span></div>
+      </div>
+    </section>
+
+    <section class="skills-section section-space" id="skills">
+      <div class="container">
+        <div class="skills-heading reveal">
+          <p class="eyebrow"><span></span>SKILLS</p>
+          <h2>What I know, <em>so far.</em></h2>
+          <p>A growing toolkit shaped by school projects, practice, and curiosity.</p>
+        </div>
+        <div class="skill-garden">
+          <article class="skill-bloom bloom-front reveal"><div class="bloom-title"><span>01</span><h3>Frontend</h3></div><p class="skill-description">Creating responsive and visually appealing user interfaces.</p><div class="petal-cluster"><span><i class="bi bi-filetype-html"></i>HTML</span><span><i class="bi bi-filetype-css"></i>CSS</span><span><i class="bi bi-bootstrap"></i>Bootstrap</span><span><i class="bi bi-filetype-js"></i>JavaScript</span></div></article>
+          <article class="skill-bloom bloom-back reveal"><div class="bloom-title"><span>02</span><h3>Backend</h3></div><p class="skill-description">Building logic, managing data, and making systems work efficiently.</p><div class="petal-cluster two-petals"><span><i class="bi bi-filetype-php"></i>PHP</span><span><i class="bi bi-database"></i>MySQL</span></div></article>
+          <article class="skill-bloom bloom-tools reveal"><div class="bloom-title"><span>03</span><h3>Tools</h3></div><p class="skill-description">The applications I use to bring ideas to life.</p><div class="petal-cluster"><span><i class="bi bi-vector-pen"></i>Figma</span><span><i class="bi bi-github"></i>GitHub</span><span><i class="bi bi-code-square"></i>VS Code</span><span><i class="bi bi-server"></i>XAMPP</span></div></article>
+          <aside class="learning-note reveal"><span class="note-tape"></span><h3>still learning <span aria-hidden="true">✦</span></h3><ul><li>API Integration</li><li>Database Design</li><li>Testing &amp; Debugging</li><li>Responsive Layouts</li></ul></aside>
+          <article class="skill-bloom bloom-soft reveal"><div class="bloom-title"><span>04</span><h3>Soft Skills</h3></div><div class="petal-cluster soft-petals"><span>Teamwork</span><span>Creativity</span><span>Problem Solving</span><span>Time Management</span><span>Attention to Detail</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section section-space" id="projects">
+      <div class="container">
+        <div class="section-heading projects-heading reveal">
+          <p class="eyebrow"><span></span>SELECTED PROJECTS</p>
+          <h2>Ideas made <strong>tangible.</strong></h2>
+          <p>A few things I&rsquo;ve enjoyed building throughout my academic journey.</p>
+        </div>
+
+        <div class="project-grid">
+          <div>
+            <article class="project-card reveal">
+              <div class="project-shot project-shot-aquasmile">
+                <span class="project-number">01</span>
+                <img src="assets/images/AquaSmile.png" alt="AquaSmile dental clinic website homepage">
+              </div>
+              <div class="project-body">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>AquaSmile</h3>
+                <p class="project-subtitle">Dental Clinic Appointment and E-Commerce Website</p>
+                <p>A web-based dental clinic system that allows users to book appointments and purchase dental products online.</p>
+                <p class="project-role"><strong>Role:</strong> Backend Developer <span>QA Tester</span></p>
+                <p class="project-learning"><i class="bi bi-lightbulb"></i><span><strong>What I learned:</strong> I learned how database design, appointment flows, and user experience work together to create a functional healthcare website.</span></p>
+              </div>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+              </div>
+              <a class="project-view" href="https://github.com/chrizyl/AquaSmile-Clinic" target="_blank" rel="noopener noreferrer" aria-label="View AquaSmile project on GitHub">View <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div>
+            <article class="project-card reveal">
+              <div class="project-shot project-shot-makikonek">
+                <span class="project-number">02</span>
+                <img src="assets/images/Makikonek.png" alt="MakiKonek barangay service portal homepage">
+              </div>
+              <div class="project-body">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>MakiKonek</h3>
+                <p class="project-subtitle">Barangay Service Request Portal</p>
+                <p>A barangay portal that allows residents to request services, book appointments, reserve facilities, and track service status.</p>
+                <p class="project-role"><strong>Role:</strong> Backend Developer <span>QA Tester</span></p>
+                <p class="project-learning"><i class="bi bi-lightbulb"></i><span><strong>What I learned:</strong> This project taught me how to manage requests, reservations, and notifications while keeping the user experience simple and organized.</span></p>
+              </div>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+              </div>
+              <a class="project-view" href="https://github.com/MNJ-S/MakiKonek" target="_blank" rel="noopener noreferrer" aria-label="View MakiKonek project on GitHub">View <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div>
+            <article class="project-card reveal">
+              <div class="project-shot project-shot-daily">
+                <span class="project-number">03</span>
+                <img src="assets/images/Daily_Maria.png" alt="Daily Maria website homepage">
+              </div>
+              <div class="project-body">
+                <span class="project-category">WEB DEVELOPMENT</span>
+                <h3>Daily Maria</h3>
+                <p class="project-subtitle">Daily Reflection and Inspiration Website</p>
+                <p>A warm digital space designed to share daily reflections and gentle inspiration.</p>
+                <p class="project-role"><strong>Role:</strong> Designer <span>Front-End Developer</span></p>
+                <p class="project-learning"><i class="bi bi-lightbulb"></i><span><strong>What I learned:</strong> I learned how warm visual styling, clear hierarchy, and thoughtful spacing can shape a calm digital experience.</span></p>
+              </div>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="next-section reveal">
+          <p class="mini-label">Beyond The Screen</p>
+          <h3>What I hope to become.</h3>
+          <div class="beyond-copy">
+            <p>Technology, for me, isn&rsquo;t just about writing code.</p>
+            <p>It&rsquo;s about creating something meaningful&mdash;whether it&rsquo;s a website, a design, or a simple idea brought to life.</p>
+            <p>I hope to continue learning, building, and finding new ways to create experiences that make people&rsquo;s lives a little easier.</p>
+          </div>
+          <blockquote>&ldquo;Still learning,<br>still building,<br>and improving one project at a time.&rdquo;</blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-built">Built with HTML, CSS, Bootstrap, JavaScript, and patience.</p>
+        <p class="footer-copy">&copy; 2026 itsmaryjm</p>
+        <a href="#home" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
