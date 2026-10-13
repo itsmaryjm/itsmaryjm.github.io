@@ -153,10 +153,11 @@ a { text-decoration: none; }
 .projects-subsection-heading { margin: 0 0 1.25rem; }
 .projects-subsection-heading .mini-label, .activities-heading .mini-label { margin-bottom: .35rem; }
 .projects-subsection-heading h3, .activities-heading h3 { margin: 0; color: var(--brown); font-family: "Cormorant Garamond", serif; font-size: 1.8rem; font-weight: 600; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 .project-card { position: relative; min-height: 100%; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 26px 12px 26px 12px; background: rgba(255,250,242,.74); box-shadow: 0 16px 36px rgba(63,42,29,.065); transition: transform .22s ease, box-shadow .22s ease; }
 .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-.activities-section { margin-top: 4.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.activities-section { position: relative; margin-top: 4.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.activities-section::after { content: ""; position: absolute; right: 0; bottom: -2.5rem; left: 0; height: 1px; background: var(--line); }
 .activities-heading { max-width: 650px; margin-bottom: 1.5rem; }
 .activities-heading > p:last-child { margin: .45rem 0 0; color: var(--muted); font-size: .85rem; }
 .activity-card { min-height: 240px; padding: 3.5rem 1.65rem 1.65rem; }
@@ -164,7 +165,7 @@ a { text-decoration: none; }
 .activity-card .project-category { margin-bottom: .25rem; }
 .activity-card h4 { margin: .35rem 0 .4rem; color: var(--ink); font-family: "Cormorant Garamond", serif; font-size: 1.65rem; font-weight: 600; }
 .activity-description { margin: 0 0 1.3rem; color: #604735; font-size: .8rem; }
-.activity-card .activity-link { position: static; align-self: flex-start; margin-top: auto; }
+.activity-card .activity-link { position: static; align-self: flex-end; margin-top: auto; }
 .project-shot { position: relative; min-height: 292px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 11px; border-bottom: 1px solid rgba(181,138,27,.24); background: #eadfd2; }
 .project-shot img { width: 100%; height: auto; aspect-ratio: 2 / 1; display: block; object-fit: contain; object-position: center center; border: 1px solid rgba(181,138,27,.28); border-radius: 15px 8px 15px 8px; background: #fff; box-shadow: 0 12px 28px rgba(63,42,29,.09); transition: transform .45s ease; }
 .project-card:hover .project-shot img { transform: scale(1.018); }
@@ -228,7 +229,7 @@ a { text-decoration: none; }
   .interest-card { min-height: auto; }
   .small-details dl { grid-template-columns: repeat(2, 1fr); }
   .skill-garden { grid-template-columns: 1fr; grid-template-areas: "front" "back" "tools" "note" "soft"; }
-  .project-grid { grid-template-columns: 1fr; }
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 575.98px) {
@@ -250,6 +251,8 @@ a { text-decoration: none; }
   .skill-bloom { padding: 1.35rem; }
   .petal-cluster span, .soft-petals span { min-width: calc(50% - .4rem); }
   .project-shot { min-height: 210px; }
+  .project-grid { grid-template-columns: 1fr; }
+  .activities-section::after { bottom: -1.75rem; }
   .project-body { padding: 1.4rem 1.3rem 0; }
   .project-tags { padding: .35rem 1.3rem 4.5rem; }
   .project-view { right: auto; left: 1.3rem; bottom: 1.25rem; }
